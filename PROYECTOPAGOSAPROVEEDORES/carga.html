@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>PORTAL PAGO A PROVEEDORES</title>
+</head>
+<H1>Carga de Facturas</H1>
+<p> Completa los datos para que su factura sea aprobada por el usuario</p>
+
+<nav>
+	<ul>
+	<li> <a href="index.html"> Inicio</li>
+	<li> <a href="carga.html"> Carga de Facturas</li>
+	<li> <a href="aprobacion.html"> Aprobación de Facturas</li>
+	<li> <a href="">Control de Facturas cargadas</li>
+	</ul>
+</nav>
+<br>
+
+<body>
+
+	<hr>
+
+		
+	<form action="" method="POST">
+		<table>	
+			
+			<caption> INGRESE AQUÍ LOS DATOS DE SU FACTURA</caption>
+			<br>		
+			<tr> 
+				<td> <label> Fecha</label></td>
+				<td> <input type="date" value="fecha"></td>
+				<td> <label> Vencimiento</label></td>
+				<td> <input type="date" value="vencimiento"></td>
+
+			</tr>
+               <tr>
+                   <td> <label for="cuit">CUIT</label></td>
+				   <td> <input type="number" id="cuit"></td>
+				   <td> <label for="razonsocial"> Razón Social</label></td>
+                   <td> <input type="text"id="razonsocial"> </td>
+				   <td> Prioridad</td>
+				   <td>	
+					   <select>
+						   <option value="ALTA">ALTA</option>
+						   <option value="MEDIA">MEDIA</option>
+						   <option value="BAJA">BAJA</option>
+					   </select>
+				   </td>
+			   </tr>
+
+			   <tr>
+				   <td> Sociedad facturada</td>
+				   <td>
+				<select>
+					<option value="MGQF"> Quickfood SA.</option>
+					<option value="MGAR"> Marfrig SA.</option>
+					<option value="MGCT"> Campo del Tesoro SA.</option>
+				   </select></td>
+				    <td> Planta</td>
+					<td>
+					<select> 
+						<option value="urbana"> Urbana</option>
+					<option value="Baradero"> Baradero</option>
+					<option value="sanjorge"> San Jorge</option>
+					<option value="pilar"> Pilar</option>
+					<option value="villa"> Villa Mercedez</option>
+					<option value="arroyo"> Arroyo Seco</option>
+					</select></td>
+			   </tr>
+			   <tr>
+                  <td> <label for="proveedores">PROVEEDORES</label></td> 
+				  <td><input type="checkbox" name="facturatipo" id="PROVEEDORES"> </td>
+				  <td> <label for="servicios"> Servicios</label></td>
+				  <td> <input type="checkbox" name="facturatipo" id="SERVICIOS"></td>
+				  <td> <label for="otros" >otros </label></td>
+				  <td> <input type="checkbox" name="facturatipo" id="OTROS"></td>
+			   </tr>
+
+			   <tr> 
+				   <td> <label for="oc"> Orden de Compra</label></td>
+				   <td> <input type="numb" id="oc"> </td>
+			   </tr>
+         
+		
+		</table> 
+		<br>
+		<input type="submit">
+		</form>
+	    
+		
+	
+<hr>
+</body>
+</html>
